@@ -1,0 +1,8 @@
+SELECT * WHERE { ?x a ?y.  ?i p ?j} LIMIT 20
+SELECT * WHERE { ?i p ?j  ?x a ?z }
+SELECT * WHERE { ?i p ?j.  ?x a ?z } LIMIT 1
+SELECT * WHERE { ?x a ?z }
+SELECT * WHERE { ?i p ?j.  ?x a ?z } LIMIT 10
+SELECT * WHERE { ?x a ?y.  ?i p ?j} LIMIT 2000 OFFSET 3
+SELECT * WHERE { ?x a ?y.  ?i p ?j} LIMIT 2000 OFFSET 7
+SELECT * WHERE { ?x a ?y.  ?i p ?j} LIMIT 2000 OFFSET 7
